@@ -1,0 +1,22 @@
+# 🏗️ SmartEstate-AI: 3D Property Intelligence
+
+A cutting-edge Real Estate landing page that integrates **Google Model-Viewer** for 3D architectural visualization and an **AI-driven Assistant** for property analysis.
+
+## 🚀 Core Features
+- **Interactive 3D Viewport**: Full 360° rotation and zoom of building models.
+- **AI Virtual Assistant**: A floating chat interface designed to answer structural and financial queries.
+- **Smart Insights**: AI-calculated yield estimates and thermal efficiency ratings.
+- **Responsive Design**: Built with Tailwind CSS for mobile and desktop optimization.
+
+## 🛠️ Technology Stack
+- **3D Engine**: [Google <model-viewer>](https://modelviewer.dev/)
+- **Styling**: Tailwind CSS (PostCSS)
+- **Intelligence**: Integrated Chat UI (Ready for OpenAI/Gemini API)
+
+## 📸 Preview
+
+
+## 🚦 Quick Start
+1. Clone the repo: `git clone https://github.com/your-username/your-repo-name.git`
+2. Open `index.html` in any modern browser.
+3. To view your own 3D model, replace the `src` URL in the `<model-viewer>` tag.
