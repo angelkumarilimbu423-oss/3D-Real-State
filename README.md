@@ -127,12 +127,3 @@ A high-performance, responsive landing page template designed for modern real es
     </script>
 </body>
 </html>
-// Add this to your <script> section to generate a building procedurally
-function generateBuilding(floors, width, depth) {
-    const scene = new THREE.Scene();
-    const material = new THREE.MeshPhongMaterial({ 
-        color: 0x88ccff, 
-        transparent: true, 
-        opacity: 0.8,
-        shininess: 100 
-    });
