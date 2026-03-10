@@ -1,4 +1,4 @@
-# 3d-real-state
+# 3D-REAL-STATE
 A high-performance, responsive landing page template designed for modern real estate marketing. This project integrates interactive 3D architectural visualization directly into the browser to enhance property showcases.
 <!DOCTYPE html>
 <html lang="en">
@@ -136,30 +136,3 @@ function generateBuilding(floors, width, depth) {
         opacity: 0.8,
         shininess: 100 
     });
-
-    const floorHeight = 3;
-    
-    for (let i = 0; i < floors; i++) {
-        // Create one floor
-        const geometry = new THREE.BoxGeometry(width, floorHeight, depth);
-        const floorMesh = new THREE.Mesh(geometry, material);
-        
-        // Stack floors on top of each other
-        floorMesh.position.y = i * floorHeight;
-        
-        // Add floor "skeleton" or wireframe for AI effect
-        const wireframe = new THREE.LineSegments(
-            new THREE.EdgesGeometry(geometry),
-            new THREE.LineBasicMaterial({ color: 0x0000ff })
-        );
-        wireframe.position.y = i * floorHeight;
-        
-        scene.add(floorMesh);
-        scene.add(wireframe);
-    }
-    return scene;
-}
-
-// Example: AI creates a 10-floor tower based on user input
-const aiBuilding = generateBuilding(10, 15, 15);
-
